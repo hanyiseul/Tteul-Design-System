@@ -1,0 +1,44 @@
+.featureCard .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: var(--primaryLight);
+  border-radius: var(--radiusXl);
+}
+.featureCard .icon img{
+  width: 20px;
+  height: 20px;
+}
+.featureCard .cardTitle {
+  margin-top: var(--spaceLg);
+  font-size: var(--fsMd);
+  font-weight: var(--fwSbold);
+  line-height: var(--lhMd);
+}
+.featureCard .desc {
+  display: block;
+  margin-top: var(--space2xs);
+  color: var(--gray500);
+  font-size: var(--fs2xs);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.featureCard .linkText {
+  display: block;
+  margin-top: var(--spaceMd);
+  color: var(--primary);
+  font-size: var(--fsXs);
+  font-weight: var(--fwSbold);
+}
+.featureCard .linkText:after {
+  content: "";
+  display: inline-block;
+  margin-left: var(--space2xs);
+  width: 14px;
+  height: 14px;
+  background: url("/icons/icon_arrow_blue.png") no-repeat center / 14px 14px;
+  vertical-align: top;
+}
