@@ -1,20 +1,25 @@
 import Card from "../Card/Card";
 import "./CountCard.css"
 
-type CountCardProps = {
+type CountCardData = {
   title: string;
-  count?: number;
+  count: number;
   desc?: string;
 };
+type CountCardProps = {
+  datas: CountCardData[];
+};
 
-const CountCard = ({title, count, desc}: CountCardProps) => {
+const CountCard = ({datas}: CountCardProps) => {
   return (
-    <div className="countCardLit">
-      <Card className="countCard">
-          <div className="cardTitle">{title}</div>
-          <div className="count">{count}</div>
-          <div className="desc">{desc}</div>
-      </Card>
+    <div className="cardList">
+      {datas.map((data, index) => (
+        <Card className="countCard" key={index}>
+          <p className="cardTitle">{data.title}</p>
+          <p className="count">{data.count}</p>
+          {data.desc && <span className="desc">{data.desc}</span>}
+        </Card>
+      ))}
     </div>
   )
 }

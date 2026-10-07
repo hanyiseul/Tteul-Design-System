@@ -1,3 +1,25 @@
-.card.countCard {
-
+.cardList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: var(--spaceMd);
+}
+.countCard .cardTitle {
+  color: var(--gray500);
+  font-size: var(--fs2xs);
+}
+.countCard .count {
+  margin-top: var(--space2xs);
+  font-size: var(--fs2xl);
+  font-weight: var(--fwBold);
+  line-height: var(--lhMd);
+  letter-spacing: var(--trackingTight);
+}
+.countCard .desc {
+  display: block;
+  margin-top: var(--space2xs);
+  color: var(--gray500);
+  font-size: var(--fs2xs);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
