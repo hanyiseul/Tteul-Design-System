@@ -1,0 +1,13 @@
+.badge {
+  display: inline-block;
+  margin-bottom: var(--spaceLg);
+  padding: var(--space2xs) var(--spaceMd) 2px;
+  border-radius: var(--radiusFull);
+  font-size: var(--fs2xs);
+  font-weight: var(--fwSbold);
+  line-height: 1;
+}
+.badge.badge_white {
+  background-color: var(--white);
+  color: var(--primary);
+}
