@@ -1,0 +1,20 @@
+.overviewBox {
+  padding: var(--space3xl);
+  color: var(--white);
+  border-radius: var(--radius3xl);
+  background: var(--primary);
+}
+.overviewBox .title {
+  font-size: var(--fs3xl);
+  font-weight: var(--fwBold);
+  line-height: var(--lhSm);
+}
+.overviewBox .desc {
+  font-size: var(--fsSm);
+  margin-top: var(--spaceSm);
+  opacity: 0.85;
+}
+.overviewBox .badge {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--white);
+}

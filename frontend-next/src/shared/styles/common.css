@@ -32,12 +32,17 @@
   z-index: -1;
 }
 
-
+main {
+  width: calc(100% - 223px - var(--space4xl));
+  padding: var(--space3xl);
+}
 main section:first-child {
   padding-top: 0;
 }
 section {
+  width: 896px;
   padding: 20px 0;
+  margin: 0 auto;
 }
 
 /* Display */
