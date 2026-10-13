@@ -2,16 +2,17 @@
 import Link from "next/link"
 import "./Header.css"
 import { usePathname } from "next/navigation";
-import { menuList } from "@/shared/constants/navigation";
+import { getCurrentPath, menuList } from "@/shared/constants/navigation";
 
 const Header = () => {
   const pathname = usePathname();
+  const currentPath = getCurrentPath(pathname);
 
   return (
     <header className="header">
       <ul className="menuList">
         {menuList.map((menu) => (
-          <li key={menu.path} className={pathname === menu.path ? "active" : ""}>
+          <li key={menu.path} className={currentPath === menu.section ? "active" : ""}>
             <Link href={menu.path}>{menu.label}</Link>
           </li>
         ))}

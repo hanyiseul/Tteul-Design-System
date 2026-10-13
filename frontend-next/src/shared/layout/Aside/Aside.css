@@ -24,13 +24,17 @@
   padding: var(--spaceMd);
 }
 .sidebar .sideList li {
-  padding: var(--spaceXs) var(--spaceSm);
   color: var(--gray500);
   font-size: var(--fsSm);
   font-weight: var(--fwMd);
   line-hieght: var(--lhMd);
   border-radius: var(--radiusLg);
   transition: 0.3s all;
+}
+.sidebar .sideList li:hover {
+  color: var(--primaryLight);
+  font-weight: var(--fwSbold);
+  background: var(--primaryHover);
 }
 .sidebar .sideList li.active {
   color: var(--primaryHover);
@@ -39,4 +43,10 @@
 }
 .sidebar .sideList li + li{
   margin-top: var(--space2xs);
+}
+.sidebar .sideList li a{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: var(--spaceXs) var(--spaceSm);
 }
