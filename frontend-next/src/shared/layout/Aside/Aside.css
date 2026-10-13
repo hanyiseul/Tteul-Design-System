@@ -7,3 +7,36 @@
   background-color: var(--white);
   z-index: 1000;
 }
+.sidebar .logo {
+  padding: var(--spaceMd) var(--spaceLg);
+  border-bottom: 1px solid var(--gray200);
+}
+.sidebar .logo a {
+  font-size: var(--fsxl);
+  font-weight: var(--fwBold);
+  letter-spacing: -1px;
+}
+.sidebar .searchWrap {
+  padding: var(--spaceMd);
+  border-bottom: 1px solid var(--gray200);
+}
+.sidebar .sideList {
+  padding: var(--spaceMd);
+}
+.sidebar .sideList li {
+  padding: var(--spaceXs) var(--spaceSm);
+  color: var(--gray500);
+  font-size: var(--fsSm);
+  font-weight: var(--fwMd);
+  line-hieght: var(--lhMd);
+  border-radius: var(--radiusLg);
+  transition: 0.3s all;
+}
+.sidebar .sideList li.active {
+  color: var(--primaryHover);
+  font-weight: var(--fwSbold);
+  background: var(--primaryLight);
+}
+.sidebar .sideList li + li{
+  margin-top: var(--space2xs);
+}

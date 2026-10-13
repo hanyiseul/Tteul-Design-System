@@ -13,13 +13,12 @@ const Aside = () => {
     <aside>
       <div className="sidebar">
         <div className="logo">
-          <Link href="/">
-            <Image src="/icons/logo.png" alt="logo" width={32} height={32} />
-          </Link>
+          <Link href="/">Tteul Design System</Link>
         </div>
-        <div className="search">
+        <div className="searchWrap">
           <input type="text" placeholder="검색어를 입력하세요" />
         </div>
+
         <ul className="sideList">
           {menus.map((menu) => (
             <li key={menu.path} className={pathname === menu.path ? "active" : ""}>

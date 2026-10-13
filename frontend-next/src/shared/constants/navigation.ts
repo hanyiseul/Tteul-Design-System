@@ -34,8 +34,8 @@ export const menuList = [
 
 export const sidebarMenus: Record<string, SidebarMenuItem[]>  = {
   overview: [
-    { label: "Overview", path: "/" },
-    { label: "Principles", path: "/principles" },
+    { label: "소개", path: "/" },
+    { label: "설계 원칙", path: "/principles" },
   ],
 
   color: [
