@@ -4,6 +4,11 @@ export type MenuItem = {
   section: string;
 };
 
+export type SidebarMenuItem = {
+  label: string;
+  path: string;
+};
+
 export const menuList = [
   {
     label: "오버뷰",
@@ -27,9 +32,10 @@ export const menuList = [
   },
 ];
 
-export const sidebarMenus = {
+export const sidebarMenus: Record<string, SidebarMenuItem[]>  = {
   overview: [
     { label: "Overview", path: "/" },
+    { label: "Principles", path: "/principles" },
   ],
 
   color: [
@@ -48,4 +54,14 @@ export const sidebarMenus = {
     { label: "Login", path: "/login" },
     { label: "Form", path: "/form" },
   ],
+};
+
+export const getSidebarMenu = (path: string): SidebarMenuItem[] => {
+  const section = menuList.find(
+    (menu) =>
+      menu.path !== "/" &&
+      (path === menu.path || path.startsWith(`${menu.path}/`))
+  )?.section ?? "overview";
+
+  return sidebarMenus[section] ?? sidebarMenus.overview;
 };

@@ -1,12 +1,7 @@
 /* Layout */
 .container {
   width: 100%;
-  min-height: calc(100vh - 191px - 78px);
-  margin: 0 auto;
-  padding: 20px 20px 92px;
-  overflow: auto;
-  margin-top: -48px;
-  white-space: pre-line;
+  background-color: rgba(249, 250, 251, 0.80);
 }
 .content-container {
   width: 100%;
@@ -33,14 +28,13 @@
 }
 
 main {
-  width: calc(100% - 223px - var(--space4xl));
-  padding: var(--space3xl);
+  padding: var(--space3xl) var(--space3xl) var(--space3xl) 256px;
 }
 main section:first-child {
   padding-top: 0;
 }
 section {
-  width: 896px;
+  width: 100%;
   padding: 20px 0;
   margin: 0 auto;
 }

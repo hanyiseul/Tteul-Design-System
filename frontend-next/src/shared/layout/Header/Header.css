@@ -1,11 +1,13 @@
 .header {
   position: sticky;
   top: 0;
-  left: 0;
+  left: 224px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: calc(100% - 224px);
   padding: var(--spaceLg) var(--space2xl);
+  background-color: var(--gray100);
   border-bottom: 1px solid var(--gray200);
 }
 .menuList {
