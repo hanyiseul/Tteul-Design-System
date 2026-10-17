@@ -1,0 +1,15 @@
+.titleWrap .title {
+  font-size: var(--fs2xl);
+  font-weight: var(--fwBold);
+  line-height: var(--lhMd);
+  letter-spacing: -0.6px;
+}
+.titleWrap .title + .titleWrap .desc {
+  margin-top: var(--spaceXs);
+}
+.titleWrap .desc {
+  color: var(--gray500);
+  font-size: var(--fsSm);
+  font-weight: var(--fwRg);
+  line-height: var(--lhMd);
+}
