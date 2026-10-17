@@ -8,11 +8,12 @@ type CountCardData = {
 };
 type CountCardProps = {
   datas: CountCardData[];
+  columns?: number;
 };
 
-const CountCard = ({datas}: CountCardProps) => {
+const CountCard = ({datas, columns}: CountCardProps) => {
   return (
-    <div className="cardList">
+    <div className={`cardList colums${columns}`}>
       {datas.map((data, index) => (
         <Card className="countCard" key={index}>
           <p className="cardTitle">{data.title}</p>

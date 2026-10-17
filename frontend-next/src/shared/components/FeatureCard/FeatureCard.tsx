@@ -12,11 +12,12 @@ type FeatureCardData = {
 };
 type FeatureCardProps = {
   datas: FeatureCardData[];
+  columns?: 2 | 3;
 };
 
-const FeatureCard = ({datas}: FeatureCardProps) => {
+const FeatureCard = ({datas, columns = 3 }: FeatureCardProps) => {
   return (
-    <div className="cardList">
+    <div className={`cardList columns${columns}`}>
       {datas.map((data, index) => (
         <Card className="featureCard" key={index} href={data.href}>
           <div className="icon">
