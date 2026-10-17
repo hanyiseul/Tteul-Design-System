@@ -28,6 +28,7 @@
 }
 
 main {
+  min-height: calc(100vh - 66px);
   padding: var(--space3xl) var(--space3xl) var(--space3xl) 256px;
 }
 main section:first-child {

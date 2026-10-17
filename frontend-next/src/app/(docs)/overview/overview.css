@@ -10,6 +10,7 @@
   line-height: var(--lhSm);
 }
 .overviewBox .desc {
+  color: var(--white);
   font-size: var(--fsSm);
   margin-top: var(--spaceSm);
   opacity: 0.85;
