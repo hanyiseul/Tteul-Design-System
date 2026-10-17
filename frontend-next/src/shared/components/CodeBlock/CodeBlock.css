@@ -1,0 +1,42 @@
+.codeBlock {
+  border: 1px solid red;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: var(--radiusXl);
+  background: #1C2230;
+}
+.coldeBlock_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spaceSm) var(--spaceLg);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.codeLang {
+  color: var(--white);
+  font-size: var(--spaceMd);
+  font-weight: var(--fwRg);
+  letter-spacing: 0.55px;
+  opacity: 0.4;
+}
+.btnCopy {
+  width: 25px;
+  height: 25px;
+  background: url("/icons/icon_copy.png") no-repeat center / 12px;
+}
+
+.codeArea {
+  color: var(--white);
+  font-size: var(--spaceMd);
+  opacity: 0.8;
+  padding: var(--spaceLg);
+  overflow-x: auto;
+  white-space: pre;
+}
+
+
+
+.codeArea pre {
+  display: block;
+  min-width: max-content;
+}
