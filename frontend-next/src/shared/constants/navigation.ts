@@ -12,7 +12,7 @@ export type SidebarMenuItem = {
 export const menuList = [
   {
     label: "오버뷰",
-    path: "/",
+    path: "/overview",
     section: "overview",
   },
   {
@@ -34,8 +34,9 @@ export const menuList = [
 
 export const sidebarMenus: Record<string, SidebarMenuItem[]>  = {
   overview: [
-    { label: "소개", path: "/" },
-    { label: "설계 원칙", path: "/principles" },
+    { label: "소개", path: "/overview" },
+    { label: "설계 원칙", path: "/overview/principles" },
+    { label: "설치 · 사용", path: "/overview/setting" },
   ],
 
   color: [
@@ -69,7 +70,7 @@ export const getCurrentPath = (path: string): string => {
 export const getSidebarMenu = (path: string): SidebarMenuItem[] => {
   const section = menuList.find(
     (menu) =>
-      menu.path !== "/" &&
+      menu.path !== "/overview" &&
       (path === menu.path || path.startsWith(`${menu.path}/`))
   )?.section ?? "overview";
 
