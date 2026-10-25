@@ -1,8 +1,7 @@
-"use client";
+"use client"
 
-import { useEffect, useState } from "react";
+import useToast from "../Toast/hooks/useToast";
 import "./CodeBlock.css"
-import Toast from "../Toast/Toast";
 
 type CodeBlockProps = {
   lang: string;
@@ -11,17 +10,15 @@ type CodeBlockProps = {
 }
 
 const CodeBlock = ({lang, code, copy}: CodeBlockProps) => {
-  const [copied, setCopied] = useState(false);
-  const [toast, setToast] = useState("");
+  const { showToast } = useToast();
 
   const handleCopy = async() => {
     try {
       await navigator.clipboard.writeText(code);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 200);
-      setToast("복사가 완료되었습니다.")
+      showToast("복사가 완료되었습니다.")
     } catch(error) {
-      console.error("실패")
+      console.error(error);
+      showToast("복사가 실패했습니다.")
     }
   } 
   
@@ -40,10 +37,7 @@ const CodeBlock = ({lang, code, copy}: CodeBlockProps) => {
             {code}
           </pre>
         </div>
-
       </div>
-
-      {toast && <Toast message={toast} />}
     </>
   )
 }

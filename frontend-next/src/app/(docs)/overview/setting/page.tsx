@@ -10,7 +10,6 @@ npm i -D tailwindcss @tailwindcss/postcss tw-animate-css`
     <div className="content">
       <Title title="설치 · 사용" desc="Next.js(App Router) 프로젝트에 컴포넌트와 토큰을 가져오는 방법입니다."/>
     
-      <Toast message="test"/>
       <section>
         <div className="settingBox">
           <p className="boxTitle">1. 의존성 설치</p>
