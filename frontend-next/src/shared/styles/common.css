@@ -307,3 +307,29 @@ img {
   font-size: var(--fs-base);
   font-weight: var(--fw-bold);
 }
+
+/* guide */
+.guideBox {
+  margin-top: var(--space2xl);
+  border: 1px solid var(--gray200);
+  border-radius: var(--radiusXl);
+  background: var(--white);
+}
+.guideBox .boxTitle {
+  font-size: var(--fsSm);
+  font-weight: var(--fwSbold);
+  padding: var(--spaceMd) var(--space2xl) ;
+  border-bottom: 1px solid var(--gray200);
+  background: rgba(244, 246, 248, 0.30);
+}
+.guideBox .sample {
+  display: flex;
+  align-items: center;
+  gap: var(--spaceMd);
+  flex-wrap: wrap;
+  padding: var(--space2xl);
+  border-bottom: 1px solid var(--gray200);
+}
+.guideBox .code{
+  padding: var(--space2xl);
+}
