@@ -1,6 +1,6 @@
 import CodeBlock from "@/shared/components/CodeBlock/CodeBlock"
 import Title from "@/shared/components/Title/Title"
-import Toast from "@/shared/components/Toast/Toast"
+import "./setting.css"
 
 const page = () => {
   const bashCode = `npm i class-variance-authority clsx tailwind-merge lucide-react sonner
@@ -10,13 +10,19 @@ npm i -D tailwindcss @tailwindcss/postcss tw-animate-css`
     <div className="content">
       <Title title="설치 · 사용" desc="Next.js(App Router) 프로젝트에 컴포넌트와 토큰을 가져오는 방법입니다."/>
     
-      <section>
-        <div className="settingBox">
-          <p className="boxTitle">1. 의존성 설치</p>
-        
+      <div className="settingBox">
+        <p className="boxTitle">1. 의존성 설치</p>
+        <div className="code">
           <CodeBlock lang="BASH" copy code={bashCode} />
         </div>
-      </section>
+      </div>
+
+      <div className="settingBox">
+        <div className="boxTitle">2. 토큰과 스타일</div>
+        <div className="code">
+          <CodeBlock lang="BASH" copy code={bashCode} />
+        </div>
+      </div>
     </div>
   )
 }

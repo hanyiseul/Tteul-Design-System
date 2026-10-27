@@ -25,7 +25,7 @@ const CodeBlock = ({lang, code, copy}: CodeBlockProps) => {
   return (
     <>
       <div className="codeBlock">
-        <div className="coldeBlock_header">
+        <div className="codeBlock_header">
           <span className="codeLang">{lang}</span>
           {copy && (
             <button type="button" className="btnCopy" onClick={handleCopy}><span className="blind">복사</span></button>
@@ -33,7 +33,7 @@ const CodeBlock = ({lang, code, copy}: CodeBlockProps) => {
         </div>
         
         <div className="codeArea">
-          <pre className="code">
+          <pre>
             {code}
           </pre>
         </div>
