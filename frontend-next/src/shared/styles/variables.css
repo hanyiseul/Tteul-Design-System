@@ -77,6 +77,7 @@
 
   /* Error */
   --destructive: #f04452;
+  --destructiveHover: #ef2a3a;
   --destructiveLight: #fff0f1;
   --destructiveForeground: #fff;
 

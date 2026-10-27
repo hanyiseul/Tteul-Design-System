@@ -1,0 +1,55 @@
+.button {
+  padding: 9px var(--spaceXl) var(--spaceSm);
+  font-size: var(--fsSm);
+  font-weight: var(--fwSbold);
+  line-height: var(--lhMd);
+  border: 1px solid var(--primary);
+  border-radius: var(--radiusXl);
+  transition: var(--transition);
+}
+.button.btn-primary {
+  color: var(--white);
+  background-color: var(--primary);
+}
+.button.btn-primary:hover {
+  background-color: var(--primaryHover);
+}
+.button.btn-secondary {
+  color: var(--gray700);
+  border-color: var(--secondary);
+  background-color: var(--secondary);
+}
+.button.btn-secondary:hover {
+  border-color: var(--gray200);
+  background-color: var(--gray200);
+}
+.button.btn-ghost {
+  color: var(--gray900);
+  border-color: transparent;
+  background-color: transparent;
+}
+.button.btn-ghost:hover {
+  color: var(--primary);
+  border-color: transparent;
+  background-color: transparent;
+}
+.button.btn-outline {
+  color: var(--gray900);
+  border-color: var(--gray200);
+  background-color: var(--white);
+}
+.button.btn-outline:hover {
+  color: var(--gray900);
+  border-color: var(--primary);
+  background-color: var(--white);
+}
+.button.btn-danger {
+  color: var(--white);
+  border-color: var(--destructive);
+  background-color: var(--destructive);
+}
+.button.btn-danger:hover {
+  color: var(--white);
+  border-color: var(--destructiveHover);
+  background-color: var(--destructiveHover);
+}

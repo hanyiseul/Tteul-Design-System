@@ -22,7 +22,7 @@ export const menuList = [
   },
   {
     label: "컴포넌트",
-    path: "/button",
+    path: "/component/button",
     section: "component",
   },
   {
@@ -46,7 +46,7 @@ export const sidebarMenus: Record<string, SidebarMenuItem[]>  = {
   ],
 
   component: [
-    { label: "Button", path: "/button" },
+    { label: "Button", path: "/component/button" },
     { label: "Input", path: "/input" },
     { label: "FileUploader", path: "/file-uploader" },
   ],
