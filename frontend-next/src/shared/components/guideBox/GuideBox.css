@@ -1,0 +1,66 @@
+.guideBox {
+  margin-top: var(--space2xl);
+  border: 1px solid var(--gray200);
+  border-radius: var(--radiusXl);
+  background: var(--white);
+  overflow: hidden;
+}
+
+.guideBox .boxHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spaceMd) var(--space2xl);
+  background: rgba(244, 246, 248, 0.30);
+}
+
+.guideBox .boxHeader .boxTitle {
+  font-size: var(--fsSm);
+  font-weight: var(--fwSbold);
+}
+
+.guideBox .boxHeader .boxDesc {
+  color: var(--gray500);
+  font-size: var(--fsXs);
+}
+
+.guideBox .boxHeader button {
+  color: var(--gray500);
+  font-size: var(--fsXs);
+}
+
+.guideBox .sample {
+  display: flex;
+  align-items: center;
+  gap: var(--spaceMd);
+  flex-wrap: wrap;
+  padding: var(--space2xl);
+  border-top: 1px solid var(--gray200);
+}
+
+.guideBox .code {
+  max-height: 0;
+  padding: 0 var(--space2xl);
+  opacity: 0;
+  overflow: hidden;
+  border-top: 1px solid transparent;
+
+  transition:
+    max-height 300ms ease-in-out,
+    padding 300ms ease-in-out,
+    opacity 200ms ease-in-out,
+    border-color 200ms ease-in-out;
+}
+
+.guideBox.isOpen .code.codeOpen {
+  max-height: 2000px;
+  padding: var(--space2xl);
+  border-top-color: var(--gray200);
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .guideBox .code {
+    transition: none;
+  }
+}
