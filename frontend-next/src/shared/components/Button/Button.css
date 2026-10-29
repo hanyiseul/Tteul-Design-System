@@ -1,12 +1,15 @@
 .button {
-  padding: 9px var(--spaceXl) var(--spaceSm);
-  font-size: var(--fsSm);
+  padding: 7px var(--spaceXl);
+  font-size: var(--fsMd);
   font-weight: var(--fwSbold);
   line-height: var(--lhMd);
   border: 1px solid var(--primary);
   border-radius: var(--radiusXl);
   transition: var(--transition);
+  box-sizing: border-box;
 }
+
+/* variants */
 .button.btn-primary {
   color: var(--white);
   background-color: var(--primary);
@@ -52,4 +55,15 @@
   color: var(--white);
   border-color: var(--destructiveHover);
   background-color: var(--destructiveHover);
+}
+
+/* size */
+.button.btn-sm {
+  padding: 7px var(--spaceMd);
+  font-size: var(--fsXs);
+  line-height: var(--lhSm);
+}
+.button.btn-lg {
+  padding: 11px var(--space3xl);
+  font-size: var(--fsMd);
 }
