@@ -6,6 +6,10 @@ import Title from "@/shared/components/Title/Title"
 import { useMutation } from "@tanstack/react-query"
 
 const Page = () => {
+  const sizeCode = `<Button text="Primary" size="sm" />
+<Button text="Primary" />
+<Button text="Primary" size="lg" />`
+
   const variantsCode = `<Button text="Primary" />
 <Button text="Secondary" variant="secondary" />
 <Button text="Ghost" variant="ghost" />
@@ -14,9 +18,6 @@ const Page = () => {
 
   const loadingCode = `<Button text="로딩 테스트" onClick={() => mutation.mutateAsync()}/>`
 
-  const sizeCode = `<Button text="Primary" size="sm" />
-<Button text="Primary" />
-<Button text="Primary" size="lg" />`
 
   const disabledCode = `<Button text="Primary" disabled />
 <Button text="Secondary" variant="secondary" disabled />
@@ -27,6 +28,13 @@ const Page = () => {
   const withIconCode = `<Button text="추가하기" img="icon_plus.png" />
 <Button text="내보내기" variant="secondary" img="icon_download.png" />
 <Button text="삭제" variant="danger" img="icon_delete.png" />`
+
+  const iconCode = `<Button text="추가하기" icon="plus" />
+<Button text="설정하기" variant="secondary" icon="setting" />
+<Button text="수정하기" variant="ghost" icon="edit" />
+<Button text="삭제" variant="ghost" icon="delete" />
+<Button text="다운로드" variant="outline" icon="download" />
+<Button text="공유하기" variant="outline" icon="share" />`
 
   const mutation = useMutation({
     mutationFn: async () => {
@@ -51,6 +59,16 @@ const Page = () => {
       />
 
       <GuideBox
+        title="Size"
+        code={sizeCode}
+        collapsible
+      >
+        <Button text="Primary" size="sm" />
+        <Button text="Primary" />
+        <Button text="Primary" size="lg" />
+      </GuideBox>
+
+      <GuideBox
         title="Variants"
         code={variantsCode}
         collapsible
@@ -68,17 +86,13 @@ const Page = () => {
         code={loadingCode}
         collapsible
       >
-        <Button text="로딩 테스트" onClick={() => mutation.mutateAsync()}/>
-      </GuideBox>
-
-      <GuideBox
-        title="Size"
-        code={sizeCode}
-        collapsible
-      >
-        <Button text="Primary" size="sm" />
-        <Button text="Primary" />
-        <Button text="Primary" size="lg" />
+        <Button text="로딩 테스트" onClick={() => mutation.mutateAsync()} />
+        <Button text="로딩 테스트" variant="secondary" onClick={() => mutation.mutateAsync()} />
+        <Button text="로딩 테스트" variant="ghost" onClick={() => mutation.mutateAsync()} />
+        <Button text="로딩 테스트" variant="outline" onClick={() => mutation.mutateAsync()} />
+        <Button text="로딩 테스트" variant="danger" onClick={() => mutation.mutateAsync()} />
+        <Button text="로딩 테스트" img="icon_plus.png" onClick={() => mutation.mutateAsync()} />
+        <Button text="추가하기" icon="plus" onClick={() => mutation.mutateAsync()}  />
       </GuideBox>
 
       <GuideBox
@@ -105,12 +119,15 @@ const Page = () => {
 
       <GuideBox
         title="Icon Only"
-        code={disabledCode}
+        code={iconCode}
         collapsible
       >
         <Button text="추가하기" icon="plus" />
-        <Button text="다운로드" variant="ghost" icon="download" />
+        <Button text="설정하기" variant="secondary" icon="setting" />
+        <Button text="수정하기" variant="ghost" icon="edit" />
         <Button text="삭제" variant="ghost" icon="delete" />
+        <Button text="다운로드" variant="outline" icon="download" />
+        <Button text="공유하기" variant="outline" icon="share" />
       </GuideBox>
     </div>
   )
