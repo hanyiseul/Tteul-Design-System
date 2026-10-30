@@ -4,6 +4,7 @@ import "@/shared/styles/index.css";
 import Header from "@/shared/layout/Header/Header";
 import Aside from "@/shared/layout/Aside/Aside";
 import ToastProvider from "@/shared/components/Toast/ToastProvider";
+import QueryProvider from "@/shared/providers/QueryProvider";
 
 export const metadata: Metadata = {
   title: "Tteul Design System",
@@ -14,15 +15,17 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="ko">
       <body>
-        <ToastProvider>
-          <div className="container">
-            <Header />
-            <Aside />
-            <main>
-              {children}
-            </main>
-          </div>
-        </ToastProvider>
+        <QueryProvider>
+          <ToastProvider>
+            <div className="container">
+              <Header />
+              <Aside />
+              <main>
+                {children}
+              </main>
+            </div>
+          </ToastProvider>
+        </QueryProvider>
       </body>
     </html>
   );
