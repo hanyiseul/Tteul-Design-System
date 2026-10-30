@@ -1,0 +1,670 @@
+/* ========================================
+   Display
+======================================== */
+
+.block {
+  display: block;
+}
+
+.inlineBlock {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
+.flex {
+  display: flex;
+}
+
+.inlineFlex {
+  display: inline-flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* ========================================
+   Flex
+======================================== */
+
+.flexRow {
+  flex-direction: row;
+}
+
+.flexCol {
+  flex-direction: column;
+}
+
+.flexWrap {
+  flex-wrap: wrap;
+}
+
+.flexNoWrap {
+  flex-wrap: nowrap;
+}
+
+.itemsStart {
+  align-items: flex-start;
+}
+
+.itemsCenter {
+  align-items: center;
+}
+
+.itemsEnd {
+  align-items: flex-end;
+}
+
+.itemsStretch {
+  align-items: stretch;
+}
+
+.justifyStart {
+  justify-content: flex-start;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.justifyEnd {
+  justify-content: flex-end;
+}
+
+.justifyBetween {
+  justify-content: space-between;
+}
+
+.justifyAround {
+  justify-content: space-around;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ========================================
+   Gap
+======================================== */
+
+.gap2xs {
+  gap: var(--space2xs);
+}
+
+.gapXs {
+  gap: var(--spaceXs);
+}
+
+.gapSm {
+  gap: var(--spaceSm);
+}
+
+.gapMd {
+  gap: var(--spaceMd);
+}
+
+.gapLg {
+  gap: var(--spaceLg);
+}
+
+.gapXl {
+  gap: var(--spaceXl);
+}
+
+.gap2xl {
+  gap: var(--space2xl);
+}
+
+.gap3xl {
+  gap: var(--space3xl);
+}
+
+
+/* ========================================
+   Grid
+======================================== */
+
+.grid2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+
+/* ========================================
+   Width & Height
+======================================== */
+
+.wFull {
+  width: 100%;
+}
+
+.wAuto {
+  width: auto;
+}
+
+.hFull {
+  height: 100%;
+}
+
+.hAuto {
+  height: auto;
+}
+
+.minW0 {
+  min-width: 0;
+}
+
+.minH0 {
+  min-height: 0;
+}
+
+.maxWFull {
+  max-width: 100%;
+}
+
+
+/* ========================================
+   Typography
+======================================== */
+
+/* Font Size */
+.text2xs {
+  font-size: var(--fs2xs);
+}
+
+.textXs {
+  font-size: var(--fsXs);
+}
+
+.textSm {
+  font-size: var(--fsSm);
+}
+
+.textMd {
+  font-size: var(--fsMd);
+}
+
+.textLg {
+  font-size: var(--fsLg);
+}
+
+.textXl {
+  font-size: var(--fsXl);
+}
+
+.text2xl {
+  font-size: var(--fs2xl);
+}
+
+.text3xl {
+  font-size: var(--fs3xl);
+}
+
+.text4xl {
+  font-size: var(--fs4xl);
+}
+
+
+/* Font Weight */
+.fontNormal {
+  font-weight: var(--fwRg);
+}
+
+.fontMedium {
+  font-weight: var(--fwMd);
+}
+
+.fontSemibold {
+  font-weight: var(--fwSbold);
+}
+
+.fontBold {
+  font-weight: var(--fwBold);
+}
+
+
+/* Line Height */
+.leadingSm {
+  line-height: var(--lhSm);
+}
+
+.leadingMd {
+  line-height: var(--lhMd);
+}
+
+.leadingLg {
+  line-height: var(--lhLg);
+}
+
+
+/* Text Align */
+.textLeft {
+  text-align: left;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.textRight {
+  text-align: right;
+}
+
+
+/* Text Decoration */
+.underline {
+  text-decoration: underline;
+}
+
+.noUnderline {
+  text-decoration: none;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.breakAll {
+  word-break: break-all;
+}
+
+
+/* ========================================
+   Text Color
+======================================== */
+
+/* Base */
+.textWhite { color: var(--white); }
+.textBlack { color: var(--black); }
+.textForeground { color: var(--foreground); }
+.textMuted { color: var(--mutedForeground); }
+
+/* Brand */
+.textPrimary { color: var(--primary); }
+.textprimaryLight { color: var(--primaryLight); }
+.textPrimaryHover { color: var(--primaryHover); }
+.textPrimaryForeground { color: var(--primaryForeground); }
+
+/* Gray */
+.textGray50 { color: var(--gray50); }
+.textGray100 { color: var(--gray100); }
+.textGray200 { color: var(--gray200); }
+.textGray300 { color: var(--gray300); }
+.textGray400 { color: var(--gray400); }
+.textGray500 { color: var(--gray500); }
+.textGray600 { color: var(--gray600); }
+.textGray700 { color: var(--gray700); }
+.textGray800 { color: var(--gray800); }
+.textGray900 { color: var(--gray900); }
+
+/* Semantic */
+.textSecondary { color: var(--secondaryForeground); }
+.textAccent { color: var(--accentForeground); }
+.textCard { color: var(--cardForeground); }
+.textPopover { color: var(--popoverForeground); }
+
+/* Status */
+.textSuccess { color: var(--success); }
+.textSuccessForeground { color: var(--successForeground); }
+
+.textDestructive { color: var(--destructive); }
+.textDestructiveForeground { color: var(--destructiveForeground); }
+
+.textWarning { color: var(--warning); }
+.textWarningForeground { color: var(--warningForeground); }
+
+.textInfo { color: var(--info); }
+.textInfoForeground { color: var(--infoForeground); }
+
+/* ========================================
+   Background Color
+======================================== */
+
+/* Base */
+.bgWhite { background-color: var(--white); }
+.bgBlack { background-color: var(--black); }
+.bgBackground { background-color: var(--background); }
+.bgForeground { background-color: var(--foreground); }
+
+/* Brand */
+.bgPrimary { background-color: var(--primary); }
+.bgPrimaryHover { background-color: var(--primaryHover); }
+.bgPrimaryLight { background-color: var(--primaryLight); }
+
+/* Gray */
+.bgGray50 { background-color: var(--gray50); }
+.bgGray100 { background-color: var(--gray100); }
+.bgGray200 { background-color: var(--gray200); }
+.bgGray300 { background-color: var(--gray300); }
+.bgGray400 { background-color: var(--gray400); }
+.bgGray500 { background-color: var(--gray500); }
+.bgGray600 { background-color: var(--gray600); }
+.bgGray700 { background-color: var(--gray700); }
+.bgGray800 { background-color: var(--gray800); }
+.bgGray900 { background-color: var(--gray900); }
+
+/* Semantic */
+.bgCard { background-color: var(--card); }
+.bgPopover { background-color: var(--popover); }
+.bgSecondary { background-color: var(--secondary); }
+.bgMuted { background-color: var(--muted); }
+.bgAccent { background-color: var(--accent); }
+.bgInput { background-color: var(--inputBackground); }
+
+/* Status */
+.bgSuccess { background-color: var(--success); }
+.bgSuccessLight { background-color: var(--successLight); }
+
+.bgDestructive { background-color: var(--destructive); }
+.bgDestructiveLight { background-color: var(--destructiveLight); }
+
+.bgWarning { background-color: var(--warning); }
+.bgWarningLight { background-color: var(--warningLight); }
+
+.bgInfo { background-color: var(--info); }
+.bgInfoLight { background-color: var(--infoLight); }
+
+/* ========================================
+   Border Color
+======================================== */
+
+.borderTransparent { border-color: transparent; }
+.borderDefault { border-color: var(--border); }
+
+.borderPrimary { border-color: var(--primary); }
+
+.borderGray100 { border-color: var(--gray100); }
+.borderGray200 { border-color: var(--gray200); }
+.borderGray300 { border-color: var(--gray300); }
+.borderGray400 { border-color: var(--gray400); }
+
+.borderSuccess { border-color: var(--success); }
+.borderDestructive { border-color: var(--destructive); }
+.borderWarning { border-color: var(--warning); }
+.borderInfo { border-color: var(--info); }
+
+
+/* ========================================
+   Margin
+======================================== */
+
+.m0 {
+  margin: 0;
+}
+
+.mtAuto {
+  margin-top: auto;
+}
+
+.mtSm {
+  margin-top: var(--spaceSm);
+}
+
+.mtMd {
+  margin-top: var(--spaceMd);
+}
+
+.mtLg {
+  margin-top: var(--spaceLg);
+}
+
+.mtXl {
+  margin-top: var(--spaceXl);
+}
+
+.mt2xl {
+  margin-top: var(--space2xl);
+}
+
+.mbSm {
+  margin-bottom: var(--spaceSm);
+}
+
+.mbMd {
+  margin-bottom: var(--spaceMd);
+}
+
+.mbLg {
+  margin-bottom: var(--spaceLg);
+}
+
+.mbXl {
+  margin-bottom: var(--spaceXl);
+}
+
+
+/* ========================================
+   Padding
+======================================== */
+
+.p0 {
+  padding: 0;
+}
+
+.pSm {
+  padding: var(--spaceSm);
+}
+
+.pMd {
+  padding: var(--spaceMd);
+}
+
+.pLg {
+  padding: var(--spaceLg);
+}
+
+.pXl {
+  padding: var(--spaceXl);
+}
+
+.p2xl {
+  padding: var(--space2xl);
+}
+
+.pxSm {
+  padding-inline: var(--spaceSm);
+}
+
+.pxMd {
+  padding-inline: var(--spaceMd);
+}
+
+.pxLg {
+  padding-inline: var(--spaceLg);
+}
+
+.pySm {
+  padding-block: var(--spaceSm);
+}
+
+.pyMd {
+  padding-block: var(--spaceMd);
+}
+
+.pyLg {
+  padding-block: var(--spaceLg);
+}
+
+
+/* ========================================
+   Border
+======================================== */
+
+.border {
+  border: 1px solid var(--border);
+}
+
+.border0 {
+  border: 0;
+}
+
+.borderTop {
+  border-top: 1px solid var(--border);
+}
+
+.borderBottom {
+  border-bottom: 1px solid var(--border);
+}
+
+
+/* ========================================
+   Border Radius
+======================================== */
+
+.roundedXs {
+  border-radius: var(--radiusXs);
+}
+
+.roundedSm {
+  border-radius: var(--radiusSm);
+}
+
+.roundedMd {
+  border-radius: var(--radiusMd);
+}
+
+.roundedLg {
+  border-radius: var(--radiusLg);
+}
+
+.roundedXl {
+  border-radius: var(--radiusXl);
+}
+
+.rounded2xl {
+  border-radius: var(--radius2xl);
+}
+
+.roundedFull {
+  border-radius: var(--radiusFull);
+}
+
+
+/* ========================================
+   Shadow
+======================================== */
+
+.shadowSm {
+  box-shadow: var(--shadowSm);
+}
+
+.shadowMd {
+  box-shadow: var(--shadowMd);
+}
+
+.shadowLg {
+  box-shadow: var(--shadowLg);
+}
+
+.shadowXl {
+  box-shadow: var(--shadowXl);
+}
+
+
+/* ========================================
+   Position
+======================================== */
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+
+/* ========================================
+   Overflow
+======================================== */
+
+.overflowHidden {
+  overflow: hidden;
+}
+
+.overflowAuto {
+  overflow: auto;
+}
+
+.overflowXAuto {
+  overflow-x: auto;
+}
+
+.overflowYAuto {
+  overflow-y: auto;
+}
+
+
+/* ========================================
+   Opacity
+======================================== */
+
+.opacity0 {
+  opacity: 0;
+}
+
+.opacity50 {
+  opacity: 0.5;
+}
+
+.opacity100 {
+  opacity: 1;
+}
+
+
+/* ========================================
+   Cursor
+======================================== */
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.cursorNotAllowed {
+  cursor: not-allowed;
+}
+
+
+/* ========================================
+   Transition
+======================================== */
+
+.transition {
+  transition: all var(--transition);
+}
+
+.transitionFast {
+  transition: all var(--transitionFast);
+}
+
+.transitionSlow {
+  transition: all var(--transitionSlow);
+}
