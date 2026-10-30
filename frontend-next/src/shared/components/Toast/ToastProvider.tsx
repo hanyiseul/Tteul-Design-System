@@ -8,12 +8,20 @@ type ToastProviderProps = {
   children: ReactNode;
 }
 
+type ToastItem = {
+  id: number;
+  message: string;
+}
+
 const ToastProvider = ({children}: ToastProviderProps) => {
-  const [toast, setToast] = useState("");
+  const [toast, setToast] = useState<ToastItem | null>(null);
   const [isExiting, setIsExiting] = useState(false);
 
   const showToast = (message: string) => {
-    setToast(message);
+    setToast({
+      id: Date.now(),
+      message,
+    });
     setIsExiting(false);
   }
 
@@ -25,7 +33,7 @@ const ToastProvider = ({children}: ToastProviderProps) => {
     }, 2000);
 
     const removeTimer = setTimeout(() => {
-      setToast("");
+      setToast(null);
       setIsExiting(false);
     }, 3000);
 
@@ -38,7 +46,7 @@ const ToastProvider = ({children}: ToastProviderProps) => {
   return (
     <ToastContext.Provider value={{showToast}}>
       {children}
-      {toast && <Toast message={toast} out={isExiting} />}
+      {toast && <Toast key={toast.id} message={toast.message} out={isExiting} />}
     </ToastContext.Provider>
   )
 }
