@@ -174,7 +174,7 @@ const Page = () => {
 
             <div className="colorDesc">
               <strong>{bg.name}</strong>
-              <strong>{bg.className}</strong>
+              <span>.{bg.className}</span>
               <span>{bg.hex}</span>
               <span>{bg.desc}</span>
             </div>
