@@ -17,7 +17,7 @@ export const menuList = [
   },
   {
     label: "디자인 토큰",
-    path: "/color",
+    path: "/token/color",
     section: "color",
   },
   {
@@ -40,7 +40,7 @@ export const sidebarMenus: Record<string, SidebarMenuItem[]>  = {
   ],
 
   color: [
-    { label: "Color", path: "/color" },
+    { label: "Color", path: "/token/color" },
     { label: "Typography", path: "/color/typography" },
     { label: "Spacing", path: "/color/spacing" },
   ],

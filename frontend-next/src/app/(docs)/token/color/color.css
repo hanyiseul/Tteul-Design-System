@@ -1,0 +1,27 @@
+.colorBox {
+  width: calc(100% /4 - 12px);
+  border: 1px solid var(--gray200);
+  border-radius: var(--radiusXl);
+  overflow: hidden;
+}
+.colorBox .color {
+  width: 100%;
+  height: 64px;
+  border-bottom: 1px solid var(--border);
+}
+.colorBox .colorDesc {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space2xs);
+  padding: var(--spaceMd);
+}
+.colorBox .colorDesc strong {
+  font-size: var(--fsSm);
+}
+.colorBox .colorDesc span {
+  color: var(--gray500);
+  font-size: var(--fs2xs);
+}
+.bgChart5 {
+  background: var(--chart5);
+}
