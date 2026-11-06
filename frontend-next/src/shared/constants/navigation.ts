@@ -57,22 +57,13 @@ export const sidebarMenus: Record<string, SidebarMenuItem[]>  = {
   ],
 };
 
-export const getCurrentPath = (path: string): string => {
-  const section = menuList.find(
-    (menu) =>
-      menu.path !== "/" &&
-      (path === menu.path || path.startsWith(`${menu.path}/`))
-  )?.section ?? "overview";
-
-  return section;
-}
-
-export const getSidebarMenu = (path: string): SidebarMenuItem[] => {
-  const section = menuList.find(
-    (menu) =>
-      menu.path !== "/overview" &&
-      (path === menu.path || path.startsWith(`${menu.path}/`))
-  )?.section ?? "overview";
-
-  return sidebarMenus[section] ?? sidebarMenus.overview;
+const getSection = (path: string): string => {
+  const section = Object.keys(sidebarMenus).find((key) =>
+    sidebarMenus[key].some((item) => path === item.path || path.startsWith(`${item.path}/`))
+  );
+  return section ?? "overview";
 };
+
+export const getCurrentPath = (path: string): string => getSection(path);
+
+export const getSidebarMenu = (path: string): SidebarMenuItem[] => sidebarMenus[getSection(path)];
