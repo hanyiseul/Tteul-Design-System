@@ -48,5 +48,5 @@
   display: inline-block;
   width: 100%;
   height: 100%;
-  padding: var(--spaceXs) var(--spaceSm);
+  padding: var(--spaceSm) var(--spaceSm) var(--spaceXs);
 }

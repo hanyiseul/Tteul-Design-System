@@ -9,6 +9,7 @@
   padding: var(--spaceLg) var(--space2xl);
   background-color: var(--gray100);
   border-bottom: 1px solid var(--gray200);
+  z-index: 1000;
 }
 .menuList {
   display: flex;
