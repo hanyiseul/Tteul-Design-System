@@ -1,0 +1,19 @@
+.typographyBox {
+  padding: var(--spaceXl);
+  border: 1px solid var(--gray200);
+  border-radius: var(--radius2xl);
+  width: 50%;
+}
+.typographyTitle {
+  margin: 0 0 var(--spaceMd);
+  font-size: var(--fs3xl);
+  font-weight: var(--fwBold);
+}
+.typographyDesc {
+  font-size: var(--fsMd);
+  font-weight: var(--fwSbold);
+}
+.typographyInfo {
+  color: var(--gray500);
+  font-size: var(--fs2xs);
+}

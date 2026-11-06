@@ -31,13 +31,48 @@
 
 .guideBox .sample {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: var(--spaceMd);
   flex-wrap: wrap;
   padding: var(--space2xl);
   border-top: 1px solid var(--gray200);
 }
+.guideBox .sample .typeList {
+  width: calc(100% + 48px);
+  margin: -24px;
+}
+.guideBox .sample .typeList li {
+  width: 100%;
+  display: flex;
+  align-items: center;    
+  justify-content: space-around;
+  gap: var(--spaceLg);
+  padding: var(--spaceLg) var(--spaceXl);
+}
+.guideBox .sample .typeList li + li {
+  border-top: 1px solid var(--gray200);
+}
+.guideBox .sample .typeList .typeTitle {
+  width: 100px;
+  flex: 0 0 auto;
+  font-size: var(--fsSm);
+  font-weight: var(--fwSbold);
+}
+.guideBox .sample .typeList .titleDesc {
+  color: var(--gray500);
+  font-size: var(--fs2xs);
+  font-weight: var(--fwRg);
 
+}
+.guideBox .sample .typeList .typeDesc {
+  width: 100%;
+}
+.guideBox .sample .typeList .typeInfo {
+  flex: 0 0 auto;
+  color: var(--gray500);
+  font-size: var(--fs2xs);
+  font-weight: var(--fwRg);
+}
 .guideBox .code {
   max-height: 0;
   padding: 0 var(--space2xl);

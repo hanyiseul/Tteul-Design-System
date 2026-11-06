@@ -41,13 +41,13 @@ export const sidebarMenus: Record<string, SidebarMenuItem[]>  = {
 
   color: [
     { label: "Color", path: "/token/color" },
-    { label: "Typography", path: "/color/typography" },
-    { label: "Spacing", path: "/color/spacing" },
+    { label: "Typography", path: "/token/typography" },
+    { label: "Spacing", path: "/token/spacing" },
   ],
 
   component: [
     { label: "Button", path: "/component/button" },
-    { label: "TextField", path: "/component/TextField" },
+    { label: "TextField", path: "/component/textField" },
     { label: "FileUploader", path: "/file-uploader" },
   ],
 
