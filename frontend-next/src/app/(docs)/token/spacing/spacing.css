@@ -1,0 +1,5 @@
+.spacingBar {
+  height: 16px;
+  background: var(--primary);
+  border-radius: 2px;
+}
