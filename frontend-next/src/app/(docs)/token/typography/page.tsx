@@ -23,14 +23,14 @@ const typeList: TypeItem[] = [
     titleDesc: "섹션 제목",
     desc: "최근 업로드한 파일",
     info: "20px · 600 · 1.4",
-    style: "textXl fontSbold leadingMd"
+    style: "textXl fontSemibold leadingMd"
   },
   {
     title: "h3",
     titleDesc: "카드 · 다이얼로그 제목",
     desc: "게시글을 삭제할까요?",
     info: "18px · 600 · 1.4",
-    style: "textLg fontSbold leadingMd"
+    style: "textLg fontSemibold leadingMd"
   },
   {
     title: "body",
