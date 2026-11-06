@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css";
 import "@/shared/styles/index.css";
+import "./globals.css";
 import Header from "@/shared/layout/Header/Header";
 import Aside from "@/shared/layout/Aside/Aside";
 import ToastProvider from "@/shared/components/Toast/ToastProvider";

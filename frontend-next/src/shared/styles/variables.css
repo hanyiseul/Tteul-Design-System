@@ -1,5 +1,7 @@
 :root {
 
+  --fontSans: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  --fontMono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   --fontSize: 16px;
   
   /* ========================================
