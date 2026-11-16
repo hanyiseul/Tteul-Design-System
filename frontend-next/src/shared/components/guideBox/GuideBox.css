@@ -66,6 +66,7 @@
 }
 .guideBox .sample .typeList .typeDesc {
   width: 100%;
+  font-size: var(--fs2xs);
 }
 .guideBox .sample .typeList .typeInfo {
   flex: 0 0 auto;

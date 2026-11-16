@@ -43,6 +43,7 @@ export const sidebarMenus: Record<string, SidebarMenuItem[]>  = {
     { label: "Color", path: "/token/color" },
     { label: "Typography", path: "/token/typography" },
     { label: "Spacing", path: "/token/spacing" },
+    { label: "Radius", path: "/token/radius" },
   ],
 
   component: [
