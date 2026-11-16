@@ -1,0 +1,15 @@
+.shadowBox{
+  flex: 1;
+  padding: var(--spaceXl);
+  border: 1px solid var(--gray200);
+  border-radius: var(--radiusMd);
+}
+.shadowInfo {
+  display: flex;
+  flex-direction: column;
+}
+.shadowInfo span {
+  margin-top: var(--spaceMd);
+  color: var(--gray500);
+  font-size: var(--fsXs);
+}
