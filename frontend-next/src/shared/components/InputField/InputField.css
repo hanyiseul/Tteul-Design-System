@@ -1,0 +1,60 @@
+.inputField {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spaceXs);
+}
+.inputField label {
+  font-size: var(--fsSm);
+  font-weight: var(--fwMd);
+}
+.inputField .inputFieldMsg {
+  font-size: var(--fs2xs);
+  line-height: var(--lhSm);
+}
+.inputField .inputFieldMsg.infoMsg{
+  color: var(--gray500);
+}
+.inputField .inputFieldMsg.errorMsg{
+  color: var(--destructive);
+}
+.inputField.inputField_error .input {
+  border-color: var(--destructive);
+}
+.inputWrap.inputIcon .input {
+  padding-left: 41px;
+}
+.inputWrap {
+  position: relative;
+}
+.inputWrap.inputIcon:before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  display: block;
+  width: 16px;
+  height: 16px;
+  transform: translateY(-50%);
+}
+.inputWrap.inputIcon .input {
+  padding-left: 41px;
+}
+.inputField_password .input {
+  border: 1px solid red;
+  padding-right: 41px;
+}
+.inputField_password .inputWrap:before {
+  right: 12px;
+}
+.inputWrap.icon-email:before {
+  background: url("/icons/icon_email.svg");
+}
+.inputWrap.icon-tell:before {
+  background: url("/icons/icon_tel.svg");
+}
+.inputWrap.icon-search:before {
+  background: url("/icons/icon_search.svg");
+}
+.inputField_password .inputWrap:before {
+  background: url("/icons/icon_search.svg");
+}

@@ -91,7 +91,7 @@ input:focus-visible,
 select:focus-visible,
 button:focus-visible,
 a:focus-visible {
-  border: 1px solid var(--purple-500);
+  border: 1px solid var(--primary);
 }
 
 textarea {
