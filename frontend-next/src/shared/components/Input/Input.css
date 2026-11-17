@@ -1,0 +1,12 @@
+.input {
+  height: 40px;
+  padding: var(--spaceMd);
+  font-size: var(--fsSm);
+  border: 1px solid var(--gray200);
+  border-radius: var(--radiusXl);
+  transition: var(--transition);
+  box-sizing: border-box;
+}
+.input::placeholder {
+  color: var(--gray500);
+}
