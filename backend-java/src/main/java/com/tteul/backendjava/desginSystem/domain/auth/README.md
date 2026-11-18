@@ -146,7 +146,10 @@ domain/
 
 ### 2.5 Database Design
 
-회원 정보는 `user` 도메인에서 관리합니다.
+회원 정보는 `user` 도메인에서 관리합니다.  
+상세한 데이터베이스 설계는 다음 문서를 참고합니다.
+- [User Database 설계](../../../../docs/database/01-user-database.md)
+- [User 테이블 생성 SQL](../../../../resources/db/migration/01-user/create-users-table.sql)
 
 | Column | Type | Constraint | Description |
 |---|---|---|---|
