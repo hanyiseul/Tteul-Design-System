@@ -21,7 +21,7 @@ const InputField = ({ id, label, type, className, placeholder, infoMsg, errorMsg
   const input = <Input type={type} placeholder={placeholder} className={className} id={inputId} />;
 
   return (
-    <div className={cn("inputField", errorMsg && "inputField_error")} id={id}>
+    <div className={cn("inputField", errorMsg && "inputField_error")}>
       <label htmlFor={inputId}>{label}</label>
       {icon ? <div className={cn("inputWrap", icon && `inputIcon icon-${icon}`)}>{input}</div> : input}
       {infoMsg && <span className="inputFieldMsg infoMsg">{infoMsg}</span>}
