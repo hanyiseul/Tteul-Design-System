@@ -50,6 +50,7 @@ export const sidebarMenus: Record<string, SidebarMenuItem[]>  = {
   component: [
     { label: "Button", path: "/component/button" },
     { label: "TextField", path: "/component/textField" },
+    { label: "Checkbox", path: "/component/checkbox" },
     { label: "FileUploader", path: "/file-uploader" },
   ],
 
